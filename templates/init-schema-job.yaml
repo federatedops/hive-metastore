@@ -39,7 +39,5 @@ spec:
       - name: hive-config
         configMap:
           name: {{ include "hiveMetastore.fullname" . }}
-
-
       restartPolicy: Never
   backoffLimit: 8
